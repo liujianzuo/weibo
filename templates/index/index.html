@@ -6,6 +6,12 @@
 <link href="/statics/index_profile_js_css/frame.css" type="text/css" rel="stylesheet" charset="utf-8">
 <link href="/statics/index_profile_js_css/comb_login_v2.css" type="text/css" rel="stylesheet" charset="utf-8">
 <link href="/statics/index_profile_js_css/skin.css" type="text/css" rel="stylesheet" id="skin_style">
+<link href="/statics/index_profile_js_css/weibo.css" type="text/css" rel="stylesheet" id="skin_style">
+
+<link href="/statics/index_profile_js_css/base.css" type="text/css" rel="stylesheet" id="skin_style">
+<link href="/statics/index_profile_js_css/home_A.css" type="text/css" rel="stylesheet" id="skin_style">
+<link href="/statics/index_profile_js_css/extra.css" type="text/css" rel="stylesheet" id="skin_style">
+<link href="/statics/index_profile_js_css/PCD_mplayer.css" type="text/css" rel="stylesheet" id="skin_style">
 
 
 {% endblock %}
@@ -29,9 +35,9 @@ try{document.execCommand("BackgroundImageCache", false, true);}catch(e){}
 	<div class="WB_miniblog">
 		<div class="WB_miniblog_fb">
 			<div id="weibo_top_public"><!--spec start-->    <!--顶部导航-->
-    <div class="WB_global_nav WB_global_nav_v2 " node-type="top_all">
-      <div class="gn_header clearfix">
-        <div class="gn_logo" node-type="logo" data-logotype="logo" data-logourl="#">
+                <div class="WB_global_nav WB_global_nav_v2 " node-type="top_all">
+                    <div class="gn_header clearfix">
+                        <div class="gn_logo" node-type="logo" data-logotype="logo" data-logourl="#">
 	        <a href="#">
 	            	            	<span class="logo"></span>
 	            	        </a>
@@ -78,13 +84,18 @@ try{document.execCommand("BackgroundImageCache", false, true);}catch(e){}
 			});
 			</script>
 			<div class="WB_main clearfix" id="plc_frame">
+                <div id="v6_pl_guide_bubbletip"></div>
+                <div id="v6_pl_content_hometip"></div>
 				<div class="WB_frame">
 				<!-- 左导 -->
-		          <div class="WB_main_l">
-		          	<div id="pl_unlogin_home_leftnav"><div class="WB_left_nav">
-	<div class="unlogin_left_nav">
-		<div class="lev_Box">
-						    				<div class="lev " category_id="0" action-type="filter_cat" suda-data="key=nologin_home&amp;value=nologin_left_hot:0" suda-uatrack="key=www_unlogin_home&amp;value=recommend"><a href="javascript:void(0);" class="S_txt1 lev_curr"><span class="#ico_block##"><em class="unlogin_icon ficon_unlog_recd S_ficon"></em></span><span class="levtxt">推荐</span><em class="W_new_count">HOT</em></a>
+		          <div class="WB_main_l" >
+		          	<div id="pl_unlogin_home_leftnav">
+                        <div class="WB_left_nav">
+	                        <div class="unlogin_left_nav">
+		                        <div class="lev_Box">
+                                    <div class="lev " category_id="0" action-type="filter_cat" suda-data="key=nologin_home&amp;value=nologin_left_hot:0" suda-uatrack="key=www_unlogin_home&amp;value=recommend">
+                                                <a href="javascript:void(0);" class="S_txt1 lev_curr">
+                                                <span class="#ico_block##"><em class="unlogin_icon ficon_unlog_recd S_ficon"></em></span><span class="levtxt">推荐</span><em class="W_new_count">HOT</em></a>
 		    	    		    	</div>
 						    				<div class="lev " category_id="2" action-type="filter_cat" suda-data="key=nologin_home&amp;value=nologin_left_hot:2" suda-uatrack="key=www_unlogin_home&amp;value=star"><a href="javascript:void(0);" class="S_txt1 "><span class="#ico_block##"><em class="unlogin_icon ficon_unlog_star S_ficon"></em></span><span class="levtxt">明星</span></a>
 		    	    		    	</div>
@@ -124,17 +135,176 @@ try{document.execCommand("BackgroundImageCache", false, true);}catch(e){}
 		          </div>
           		<!-- ／左导 -->
 		          <div id="plc_main">
-		          	<div id="plc_unlogin_home_main"><div class="WB_frame_c">
-	<div id="pl_unlogin_home_feed">            <div class="WB_cardwrap unlogin_notes" action-type="unread_feed_tip" style="display:none"><span class="wrap"><i class="W_loading"></i>推荐中...</span></div>
+		          	<div id="plc_unlogin_home_main">
+                        <div class="WB_frame_c">
+	                        <div id="pl_unlogin_home_feed">
+                                <div class="WB_cardwrap unlogin_notes" action-type="unread_feed_tip" style="display:none">
+                                    <span class="wrap"><i class="W_loading"></i>推荐中...</span>
+                                </div>
 
         <div class="PCD_pictext_i PCD_pictext_i_v5 " id="PCD_pictext_i_v5">
     	<div class="WB_innerwrap">
     		<div class="m_wrap">
 
         <!--feed内容-->
-                    <ul class="pt_ul clearfix" pagenum="" node-type="feed_list">
 
 <!--livetv card -->
+<div class="WB_main_c">
+    <div id="v6_pl_content_publishertop"><div class="send_weibo S_bg2 clearfix" node-type="wrap">
+    <div class="title_area clearfix">
+        <div class="title" node-type="publishTitle"><span class="txt">What’s new with you?</span>
+            <p class="W_swficon ficon_swtxt">
+                <em class="spac1">有什么新</em>
+                <em class="spac2">鲜</em>
+                <em class="spac3">事想告诉大家</em>
+                <em class="spac4">?</em></p>
+        </div>
+            <div class="num S_txt2" node-type="num" style="display: none;">还可以输入<span>140</span>字</div>
+            <div class="key" node-type="recommendTopic">
+                <a href="http://huati.weibo.com/4182737?refer=homright" target="_blank">河南幼儿园校车与货车相撞致2人重伤，原因正在调查(视频)</a>　<a href="http://hot.weibo.com?refer=homright" target="_blank">热门微博</a>                 <a href="javascript:;" style="position:absolute;top:-1000px;" title="微博内容列表"></a>
+                <a href="javascript:;" id="focus_feed_list" style="position:absolute;top:-1000px;"></a>
+            </div>
+    </div>
+    <div class="input " node-type="textElDiv">
+        <textarea class="W_input " title="微博输入框" name="" node-type="textEl" range="0&amp;0" content="" style="margin: 0px; padding: 0px; border-style: none; border-width: 0px; font-size: 14px; word-wrap: break-word; line-height: 18px; overflow-y: auto; overflow-x: hidden; outline: none;"></textarea>
+        <div class="send_succpic" style="display:none" node-type="successTip"><span class="W_icon icon_succB"></span><span class="txt">发布成功</span></div>
+        <form style="display:none;" node-type="extradata">
+    		<input name="pollid" value="">
+            <input name="pub_source" value="main_">
+		</form>
+        <div class="set_timer S_line1 S_bg1 clearfix" node-type="settime" style="display: none;">
+                        <span class="set_date_txt W_fl">发布时间：</span>
+            <div class="set_data_mod W_fl S_line3 clearfix" action-type="settime_data" action-data="start=2016-09-22&amp;end=2016-09-24">
+                <input type="text" value="2016-09-22" class="ipt W_fl" readonly="true" node-type="settime_data">
+                <i class="icon_calendar W_fr"></i>
+            </div>
+            <select class="sel_time S_line1 W_fl" action-type="settime_hour" node-type="settime_hour">
+                                    <option value="00">00</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18" selected="true">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                            </select>
+            <span class="set_time_txt W_fl">时</span>
+            <select class="sel_time S_line1 W_fl" action-type="settime_min" node-type="settime_min">
+                                <option value="00">00</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26" selected="true">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                                <option value="47">47</option>
+                                <option value="48">48</option>
+                                <option value="49">49</option>
+                                <option value="50">50</option>
+                                <option value="51">51</option>
+                                <option value="52">52</option>
+                                <option value="53">53</option>
+                                <option value="54">54</option>
+                                <option value="55">55</option>
+                                <option value="56">56</option>
+                                <option value="57">57</option>
+                                <option value="58">58</option>
+                                <option value="59">59</option>
+                            </select>
+            <span class="set_time_txt W_fl">分</span>
+            <a title="取消发布定时微博" href="javascript:void()" action-type="close" class="W_ficon ficon_close S_ficon">X</a> <a href="http://weibo.com/3986757277/profile?profile_ftype=1&amp;timefeed=1#_0" node-type="timing_blog_manage" class="rt_txt W_fr">管理待发布微博</a>
+        </div>
+    </div>
+    <div class="func_area clearfix" node-type="widget">
+        <div class="func">
+            <div class="limits">
+            <a class="S_txt1" action-data="rank=0" suda-data="key=tblog_edit_exposure&amp;value=edit_click" action-type="showPublishTo" node-type="showPublishTo" href="javascript:void(0)" onclick="return false" title="公开-你发表的微博可以被大家公开查看哦"><span class="W_autocut" node-type="publishTotext">公开</span><em class="W_ficon ficon_arrow_down S_ficon">c</em></a>
+            </div>
+            <a href="javascript:void(0);" class="W_btn_a btn_30px W_btn_a_disable" diss-data="module=stissue" node-type="submit" title="发布微博按钮">发布</a>
+        </div>
+        <div class="kind">
+        	<a class="S_txt1" href="javascript:void(0);" action-type="face" action-data="type=500&amp;action=1&amp;log=face&amp;cate=1" title="表情" node-type="smileyBtn" suda-uatrack="key=tblog_home_edit&amp;value=phiz_button">
+                <em class="W_ficon ficon_face">o</em>表情</a>
+            <a class="S_txt1" href="javascript:void(0);" action-type="multiimage" action-data="type=508&amp;action=1&amp;log=image&amp;cate=1" title="图片" suda-uatrack="key=tblog_new_image_upload&amp;value=image_button">
+                <em class="W_ficon ficon_image">p</em>图片</a>
+            <a class="S_txt1" href="javascript:void(0);" action-type="video" action-data="type=502&amp;action=1&amp;log=video&amp;cate=1" title="视频" suda-uatrack="key=tblog_home_edit&amp;value=video_button">
+                <em class="W_ficon ficon_video">q</em>视频</a>
+            <a class="S_txt1" href="javascript:void(0);" action-type="topic" action-data="type=504&amp;action=1&amp;log=topic&amp;cate=1" title="话题" suda-uatrack="key=tblog_home_edit&amp;value=topic_button">
+                <em class="W_ficon ficon_swtopic">"</em>话题</a>
+            <a class="S_txt1" href="http://weibo.com/ttarticle/p/editor" target="_blank" title="头条文章" suda-uatrack="key=tblog_headline_article&amp;value=headline_article_button">
+                <em class="W_ficon ficon_artical"></em>头条文章</a>
+            <a href="javascript:void(0);" node-type="more" class="W_ficon ficon_more S_ficon" title="查看更多">…</a>
+	                </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<ul class="pt_ul clearfix" pagenum="" node-type="feed_list">
+
 <li class="pt_li pt_li_1 S_bg2" id="livetv" mid="4021758757136711" action-type="feed_list_item" href="#">
     <div class="pic_txt clearfix">
 	    <div class="pic_box">
@@ -436,7 +606,37 @@ try{document.execCommand("BackgroundImageCache", false, true);}catch(e){}
 </div>
 
 <div class="WB_main_r" fixed-box="true">
-	<div id="pl_unlogin_home_login"><div style="visibility: hidden;"></div><div style="z-index: 10; transform: translateZ(0px); position: relative; width: 230px;"><div class="W_unlogin_v2" fixed-inbox="true" fixed-id="2">
+    <div id="v6_pl_content_setskin">
+        <div class="templete_enter UI_top_hidden">
+            <a href="javascript:void(0);" class="W_icon icon_setskin" suda-data="key=tblog_home_click&amp;value=templet_replace" action-data="skinId=" node-type="set_skin" action-type="set_skin" title="模板设置">
+
+            </a>
+        </div>
+    </div>
+
+    <div id="v6_pl_rightmod_myinfo"><div class="WB_cardwrap S_bg2">
+    <div class="W_person_info">
+      <div class="cover" id="skin_cover_s" style="background-image:url(http://img.t.sinajs.cn/t6/skin/skin053/images/profile_cover_s.jpg?version=15c0e60fc6524d12)">
+        <div class="headpic"> <a bpfilter="page_frame" href="/3986757277/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" title="MC的暖暖阳光"><img class="W_face_radius" src="http://tva1.sinaimg.cn/crop.69.1.120.120.180/eda1169dgw1ecr39pdiq6j205k04kwei.jpg" width="60" height="60" alt="MC的暖暖阳光"></a></div>
+      </div>
+      <div class="WB_innerwrap">
+        <div class="nameBox"><a bpfilter="page_frame" href="/3986757277/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" class="name S_txt1" title="MC的暖暖阳光">MC的暖暖阳光</a><a action-type="ignore_list" title="微博会员" target="_blank" href="http://vip.weibo.com/"><i class="W_icon icon_member_dis"></i></a><a action-type="" suda-data="key=tblog_grade_float&amp;value=grade_icon_click" target="_blank" href="http://level.account.weibo.com/level/mylevel?from=front"><span node-type="levelBox" levelup="0" action-data="level=14" class="W_icon_level icon_level_c3"><span class="txt_out"><span class="txt_in"><span node-type="levelNum" title="微博等级14 升级有好礼">Lv.14</span></span></span></span></a></div>
+        <ul class="user_atten clearfix W_f18">
+          <li class="S_line1"><a bpfilter="page_frame" href="/3986757277/follow?rightmod=1&amp;wvr=6" class="S_txt1"><strong node-type="follow">82</strong><span class="S_txt2">关注</span></a></li>
+          <li class="S_line1"><a bpfilter="page_frame" href="/3986757277/fans?rightmod=1&amp;wvr=6" class="S_txt1"><strong node-type="fans">136</strong><span class="S_txt2">粉丝</span></a></li>
+          <li class="S_line1"><a bpfilter="page_frame" href="/3986757277/profile?rightmod=1&amp;wvr=6&amp;mod=personnumber" class="S_txt1"><strong node-type="weibo">137</strong><span class="S_txt2">微博</span></a></li>
+        </ul>
+      </div>
+    </div>
+</div></div>
+
+
+
+
+	<div id="pl_unlogin_home_login">
+        <div style="visibility: hidden;"></div>
+        <div style="z-index: 10; transform: translateZ(0px); position: relative; width: 230px;">
+            <div class="W_unlogin_v2" fixed-inbox="true" fixed-id="2">
                   <div class="login_box" id="pl_login_form">
                       <div class="login_innerwrap">
                           <div class="info_header">
@@ -576,7 +776,10 @@ try{document.execCommand("BackgroundImageCache", false, true);}catch(e){}
                       </div>
                   </div>
 </div><div style="height:1px;margin-top:-1px;visibility:hidden;"></div></div><div class="bg" node-type="qr_help" style="position: absolute; top: 2px; left: -220px; width: 264px; height: 372px; z-index: 999; display: none; background-image: url(&quot;#"></div></div>
-	<div id="pl_unlogin_home_topic"><div class="WB_cardwrap S_bg2">
+
+
+
+    <div id="pl_unlogin_home_topic"><div class="WB_cardwrap S_bg2">
     <div class="DSC_text_e">
       <div class="WB_cardtitle_b S_line2">
         <!--<h4 class="obj_name"><span class="main_title W_fb W_f14"><a href="#">热门话题</a></span></h4>-->
